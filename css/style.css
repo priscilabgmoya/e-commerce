@@ -3,11 +3,20 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex-grow: 1;
+    min-height: 100vh;
+}
 #containerCards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 100vh;
     width: 100%;
 }
 .cardHome{
@@ -68,3 +77,19 @@
 .containerHome{
     margin-top: 55px;
 }
+#copyrightFooter {
+    text-align: center;
+    color: #e0e0e0;
+  }
+  #cuerpoFooter .h5 {
+    color: #5d534e;
+   text-decoration:underline #5c636a
+  }
+  #cuerpoFooter li a,li{
+    text-decoration: none ;
+    color: #e0e0e0;
+  }
+  #cuerpoFooter ul {
+    list-style: none;
+  padding-left: 0;
+  }

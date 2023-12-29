@@ -1,4 +1,5 @@
 import {mueblesOficina } from '../db/db.js'; 
+import { Footer } from './footer.js';
 import { NavBar } from './navBar.js';
 const containerCards = document.getElementById("containerCards");
 
@@ -37,4 +38,5 @@ window.onload = function(){
             containerCards.appendChild(div); 
         }
     })
+    Footer(); 
 }
