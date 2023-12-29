@@ -2,7 +2,15 @@ import {mueblesOficina } from '../db/db.js';
 import { Footer } from './footer.js';
 import { NavBar } from './navBar.js';
 const containerCards = document.getElementById("containerCards");
-
+function cargarBotones() {
+    const btnsCards = document.querySelectorAll(".btnComprarMueble"); 
+    btnsCards.forEach((btn) => {
+        btn.onclick = function () {
+            let url = './pages/detalleTemplate.html?mueble=' + encodeURIComponent(btn.id);
+            window.open(url, "_blank");
+          };
+        });
+}
 window.onload = function(){
   NavBar(); 
     mueblesOficina.map((mueble)=>{
@@ -39,4 +47,5 @@ window.onload = function(){
         }
     })
     Footer(); 
+    cargarBotones(); 
 }
