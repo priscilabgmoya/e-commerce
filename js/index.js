@@ -37,7 +37,7 @@ window.onload = function(){
                 ` : `<small class="text-body-secondary">Precio : $ ${mueble.precio}</small>`}
               </div>
               <div class="cardFooter">
-              <button class="btnComprarMueble" id="${mueble.id}">comprar</button>
+              <button class="btnComprarMueble" id="${mueble.id}"><i class="bi bi-eye"></i> Detalle</button>
             </div>
           </div>
             </div>
