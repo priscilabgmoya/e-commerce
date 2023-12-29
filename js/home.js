@@ -1,7 +1,9 @@
 import {mueblesOficina } from '../db/db.js'; 
+import { NavBar } from './navBar.js';
 const containerCards = document.getElementById("containerCards");
 
 window.onload = function(){
+  NavBar(); 
     mueblesOficina.map((mueble)=>{
         let precioDescuento = 0;
         if(mueble.publicado){
