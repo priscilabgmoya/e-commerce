@@ -2,7 +2,15 @@ import {mueblesOficina } from '../db/db.js';
 import { Footer } from './footer.js';
 import { NavBar } from './navBar.js';
 const containerCards = document.getElementById("containerCards");
-
+function cargarBotones() {
+    const btnsCards = document.querySelectorAll(".btnComprarMueble"); 
+    btnsCards.forEach((btn) => {
+        btn.onclick = function () {
+            let url = './pages/detalleTemplate.html?mueble=' + encodeURIComponent(btn.id);
+            window.open(url, "_blank");
+          };
+        });
+}
 window.onload = function(){
   NavBar(); 
     mueblesOficina.map((mueble)=>{
@@ -29,7 +37,7 @@ window.onload = function(){
                 ` : `<small class="text-body-secondary">Precio : $ ${mueble.precio}</small>`}
               </div>
               <div class="cardFooter">
-              <button class="btnComprarMueble" id="${mueble.id}">comprar</button>
+              <button class="btnComprarMueble" id="${mueble.id}"><i class="bi bi-eye"></i> Detalle</button>
             </div>
           </div>
             </div>
@@ -39,4 +47,5 @@ window.onload = function(){
         }
     })
     Footer(); 
+    cargarBotones(); 
 }
