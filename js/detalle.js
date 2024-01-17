@@ -13,7 +13,6 @@ function cargarDetalle() {
         if(mueble.descuento){
             precioDescuento = Math.round(mueble.precio - ((mueble.precio * mueble.porcentaje_descuento) / 100))
         }
-        console.log(mueble);
         document.getElementById("containerDetalle").innerHTML = `
       <div class="row">
       <div class="col-lg-4 containerImg">
@@ -39,7 +38,6 @@ function cargarDetalle() {
       </div>
   </div>
       </div>
-      
   </div>
   
       `;

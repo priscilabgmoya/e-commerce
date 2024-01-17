@@ -20,7 +20,7 @@ function NavBar(){
           <a class="nav-link">Contactanos</a>
         </li>
       </ul>
-      <a class="btnLogin"> <i class="bi bi-box-arrow-in-right mx-1"></i> Login</a>
+      <a class="btnLogin" href="../pages/login.html" > <i class="bi bi-box-arrow-in-right mx-1"></i> Login</a>
     </div>
   </div>
     `; 
