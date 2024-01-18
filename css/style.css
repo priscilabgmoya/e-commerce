@@ -16,7 +16,6 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 100%;
 }
 .cardHome {
   max-width: 500px;
@@ -115,4 +114,45 @@ justify-content: center;
 }
 .btnAgregarCarrito{
     background-color: orangered;
+}
+.btnCategories{
+  margin: 5px;
+  background-color: gainsboro;
+  border-radius: 20px;
+  border: none;
+}
+.changeColorBtnCategories{
+  background-color: orange !important;
+}
+.btnHidden{
+  display: none;
+}
+.btnClear{
+  background-color: red;
+  border: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+}
+.pagination-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pagination-btn:hover {
+  background-color: #ddd;
+}
+
+.active {
+  background-color: orange;
+  color: white;
+}
+#ContainerPagination {
+  text-align: center;
+  margin-top: 20px;
 }

@@ -27,7 +27,16 @@
     <main>
       <div class="container-fluid containerHome">
         <h1 class="text-center mt-2">Muebles disponibles</h1>
-        <div id="containerCards"></div>
+        <div class="row  row-cols-sm-1 row-cols-lg-2">
+          <span class="col-lg-2  col-xs-4  col-md-4 col-sm-6 d-flex  flex-column" id="containerCategories">
+            <h5>Categorias: </h5>
+            <button class="btnHidden" id="btnClearCategories"><i class="bi bi-x-circle"></i></button>
+          </span>
+          <div class="col-lg-10 col-xs-12 col-sm-12" id="containerCards"></div>
+        </div>
+        <div class="row my-2">
+          <div id="ContainerPagination"></div>
+        </div>
       </div>
     </main>
     <footer></footer>
