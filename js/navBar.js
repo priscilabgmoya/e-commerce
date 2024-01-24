@@ -1,8 +1,14 @@
-function NavBar(){
-    const header = document.getElementsByTagName("header"); 
-    const nav = document.createElement("nav"); 
-    nav.classList.add("navbar", "navbar-expand-lg", "bg-dark", "navbar-dark","fixed-top"); 
-    nav.innerHTML = `
+function NavBar() {
+  const header = document.getElementsByTagName("header");
+  const nav = document.createElement("nav");
+  nav.classList.add(
+    "navbar",
+    "navbar-expand-lg",
+    "bg-dark",
+    "navbar-dark",
+    "fixed-top"
+  );
+  nav.innerHTML = `
     <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,15 +23,13 @@ function NavBar(){
           <a class="nav-link" href="#">Quienes Somos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Contactanos</a>
+          <a class="nav-link" href="/pages/contact.html">Contactanos</a>
         </li>
       </ul>
       <a class="btnLogin" href="../pages/login.html" > <i class="bi bi-box-arrow-in-right mx-1"></i> Login</a>
     </div>
   </div>
-    `; 
-    header[0].appendChild(nav); 
+    `;
+  header[0].appendChild(nav);
 }
-export{
-    NavBar
-}
+export { NavBar };
