@@ -1,8 +1,8 @@
 function Footer() {
-    const footer = document.getElementsByTagName("footer"); 
-    const section = document.createElement("section"); 
-    section.classList.add("container-fluid", "bg-black"); 
-    section.innerHTML = `
+  const footer = document.getElementsByTagName("footer");
+  const section = document.createElement("section");
+  section.classList.add("container-fluid", "bg-black");
+  section.innerHTML = `
     <article class="row" id="cuerpoFooter">
         <aside class="col-xl-3 col-sm-3 col-md-3">
           <p class="h5">XXXXX-XXXXX</p>
@@ -17,7 +17,7 @@ function Footer() {
           <ul>
             <li><a href="./page/quienesSomos.html">Quienes Somos</a></li>
             <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./page/contacto.html">Contactanos</a></li>
+            <li><a href="/pages/contact.html">Contactanos</a></li>
             <li><a href="./page/error404.html">Nuestra Historia</a></li>
           </ul>
         </aside>
@@ -53,9 +53,7 @@ function Footer() {
       <article class="row" id="copyrightFooter">
         <p class="h6 text-center">&copy; 2023. Todos los derechos reservados.</p>
       </article>
-    `; 
-    footer[0].appendChild(section); 
+    `;
+  footer[0].appendChild(section);
 }
-export{
-    Footer
-}
+export { Footer };
