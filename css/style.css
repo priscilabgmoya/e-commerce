@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #00355498;
 }
 main {
   flex-grow: 1;
@@ -15,30 +16,35 @@ main {
 #containerCards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .cardHome {
-  max-width: 500px;
+  max-width: 400px;
   min-height: 200px;
-  border: solid 1px;
+  background-color: #babdbf;
+  border-radius: 20px;
 }
 .cardImgHome {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50vh;
+  padding: 5px;
+  
 }
 .cardImgHome img {
-  height: 100%;
+  height: 50%;
   object-fit: contain;
 }
 .containerTexto {
   display: flex;
   flex-direction: column;
+  color: white !important;
 }
 .textoPrecio {
   text-decoration: line-through;
   font-size: 15px !important;
+  color: white;
 }
 .textoPrecioNuevo {
   color: red;
@@ -58,8 +64,16 @@ main {
   background-color: green;
   color: white;
 }
+.card-title {
+  text-align: center;
+}
 .card-body {
-  height: 50vh;
+  height: 47vh;
+
+}
+.card-body p{
+  text-align:start;
+  color: white;
 }
 .navbar-nav {
   display: flex !important;
@@ -73,7 +87,7 @@ main {
   font-size: 15px;
 }
 .containerHome {
-  margin-top: 55px;
+  margin-top: 75px;
 }
 #copyrightFooter {
   text-align: center;
@@ -98,6 +112,10 @@ li {
 .containerImg{
 display: flex;
 justify-content: center;
+align-items: center;
+}
+.containerImg img{
+  width: 100%;
 }
 .containerBtns{
     display: flex;

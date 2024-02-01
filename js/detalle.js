@@ -18,11 +18,11 @@ function cargarDetalle() {
       <div class="col-lg-4 containerImg">
           <img src="${mueble.url_imagen}" alt="imagen de ${mueble.nombre}">
       </div>
-      <div class="col-lg-8">
+      <div class="col-lg-8 px-3">
       <h1 class="text-center">
       ${mueble.nombre}    
       </h1>
-      <p>${mueble.descripcion}</p>
+      <p class="containerTexto">${mueble.descripcion}</p>
       ${mueble.descuento?`
       <p class="containerTexto">
       <span class="text-body-secondary ">Precio :   <span class="textoPrecio">$  ${mueble.precio} </span></span>
